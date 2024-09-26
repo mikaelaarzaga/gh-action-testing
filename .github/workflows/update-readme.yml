@@ -11,6 +11,8 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: action/checkout@v2
+      with:
+        repository: mikaelaarzaga/mika-testing-restapi
 
     - name: Set up Python
       uses: actions/setup-python@v2
