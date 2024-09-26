@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - name: Checkout Repository
-    uses: action/checkout@v2
+      uses: action/checkout@v2
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -33,5 +33,5 @@ jobs:
         git commit -m 'Update README for new release'
         git push
       env:
-      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       
